@@ -1,0 +1,5 @@
+<ng-container *ngFor="let emp of emps">
+    <div (click)="navigateTo(emp.name, emp.age)">{{emp.name}}</div>
+</ng-container>
+<div>Employee Details are</div>
+<router-outlet></router-outlet>
